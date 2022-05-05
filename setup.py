@@ -6,6 +6,7 @@ setup(
     name='apple-heartrate-pandas',
     version=__version__,
 
+    license='MIT',
     url='https://github.com/LeonardoAlchieri/apple-heartrate-pandas',
     author='Leonardo Alchieri',
     author_email='leonardo@alchieri.eu',
