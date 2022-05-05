@@ -1,9 +1,13 @@
 from setuptools import setup
 # NOTE: necessary to import __version__
-from sys import path
+import sys
 from pathlib import Path
-path.append(str(Path(__file__).parent))
+sys.path.append(str(Path(__file__).parent))
 from apple_heartrate_pandas import __version__
+
+from os import path
+with open(path.join(path.abspath(path.dirname(__file__)), "README.md")) as f:
+    readme = f.read()
 
 setup(
     name='apple_heartrate_pandas',
@@ -12,7 +16,7 @@ setup(
     url='https://github.com/LeonardoAlchieri/apple-heartrate-pandas',
     author='Leonardo Alchieri',
     author_email='leonardo@alchieri.eu',
-    description='A Python package to convert Apple Health Heartbate in Pandas',
+    description='A Python package to convert Apple Health Heartrate in Pandas',
     long_description=readme,
     long_description_content_type="text/markdown",
     keywords=['apple', 'health', 'heartrate', 'pandas'],
