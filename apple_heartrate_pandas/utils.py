@@ -22,7 +22,7 @@ def convert_and_clean_heartrate(workout_data: Dict[str, Any]) -> Series:
     Example
     -------
     >>> json_file_path: str = './HealthAutoExport-2022-05-05-2022-05-05.json'
-    >>> list_of_series = json_get_heartrate(json_file_path)
+    >>> list_of_series = get_json_heartrate(json_file_path)
     >>> list_of_series[0]
     date
     2022-05-05 10:53:40+02:00    82
@@ -57,7 +57,7 @@ def convert_and_clean_heartrate(workout_data: Dict[str, Any]) -> Series:
     return heart_rate_data['qty']
     
 
-def json_get_heartrate(json_file_path: str) -> List[Series]:
+def get_json_heartrate(json_file_path: str) -> List[Series]:
     """This method will read a json file with Health Data from the iPhone and Apple Watch,
     as exported by the [Auto Export](https://apps.apple.com/us/app/health-auto-export-json-csv/id1115567069) 
     application, and returns a List of Series, where each Series is the timeseries of 

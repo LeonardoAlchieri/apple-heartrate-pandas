@@ -14,7 +14,7 @@ For reference, in the `requirements.txt` file, I have put the installation link 
 
 Just do:
 ```python
-from apple_heartrate_pandas import json_get_heartrate
+from apple_heartrate_pandas import get_json_heartrate
 ```
 to import the main module required. Once this is done, just feed the method a path to the json file, extracted with the [Auto Export](https://apps.apple.com/us/app/health-auto-export-json-csv/id1115567069) application on iOS, and you are done. 
 

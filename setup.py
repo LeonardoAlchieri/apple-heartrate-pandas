@@ -13,7 +13,7 @@ setup(
     author='Leonardo Alchieri',
     author_email='leonardo@alchieri.eu',
     description='A Python package to convert Apple Health Heartbate in Pandas',
-    long_description='readme',
+    long_description=readme,
     long_description_content_type="text/markdown",
     keywords=['apple', 'health', 'heartrate', 'pandas'],
     py_modules=['apple_heartrate_pandas'],
