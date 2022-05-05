@@ -1,3 +1,2 @@
 from .utils import get_json_heartrate
-
-__version__ = '0.1.2'
+from ._version import __version__
