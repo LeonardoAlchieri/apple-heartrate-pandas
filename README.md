@@ -1,8 +1,7 @@
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.org/project/YoutubeScraper/)
-[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![PyPI version fury.io](https://badge.fury.io/py/ansicolortags.svg)](https://pypi.org/project/apple-heartrate-pandas/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pybadges.svg)](https://pypi.org/project/apple-heartrate-pandas/)
+[![Downloads](https://pepy.tech/badge/youtubescraper)](https://pypi.org/project/apple-heartrate-pandas/)
 
 # apple-heartrate-pandas
 Simple package to read as a pandas dataframe the heartrate from the Apple Watch.
