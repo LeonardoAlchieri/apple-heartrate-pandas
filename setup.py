@@ -1,6 +1,6 @@
 from setuptools import setup
 # NOTE: necessary to import __version__
-exec(open("[apple_heartrate_pandas]/_version.py").read())
+exec(open("apple_heartrate_pandas/_version.py").read())
 
 from os import path
 with open(path.join(path.abspath(path.dirname(__file__)), "README.md")) as f:
