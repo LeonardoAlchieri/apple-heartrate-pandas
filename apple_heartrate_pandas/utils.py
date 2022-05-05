@@ -1,8 +1,8 @@
-from typing import Any
+from typing import Any, Dict, List
 from pandas import DataFrame, to_datetime, Series
 from json import loads
 
-def convert_and_clean_heartrate(workout_data: dict[str, Any]) -> Series:
+def convert_and_clean_heartrate(workout_data: Dict[str, Any]) -> Series:
     """This method gets the dictionary with the data from a single workout, and creates 
     a series where the values are the HeartBeats and the index is a timestamp. The 
     information regarding the unit of measure (which is expected to be 'bpm') is saved 
@@ -11,7 +11,7 @@ def convert_and_clean_heartrate(workout_data: dict[str, Any]) -> Series:
 
     Parameters
     ----------
-    workout_data : dict[str, Any]
+    workout_data : Dict[str, Any]
         dictionary containing all of the information regarding a single workout data
 
     Returns
@@ -57,10 +57,10 @@ def convert_and_clean_heartrate(workout_data: dict[str, Any]) -> Series:
     return heart_rate_data['qty']
     
 
-def json_get_heartrate(json_file_path: str) -> list[Series]:
+def json_get_heartrate(json_file_path: str) -> List[Series]:
     """This method will read a json file with Health Data from the iPhone and Apple Watch,
     as exported by the [Auto Export](https://apps.apple.com/us/app/health-auto-export-json-csv/id1115567069) 
-    application, and returns a list of Series, where each Series is the timeseries of 
+    application, and returns a List of Series, where each Series is the timeseries of 
     the heartbeat for a single workout. 
 
     Parameters
@@ -70,11 +70,11 @@ def json_get_heartrate(json_file_path: str) -> list[Series]:
 
     Returns
     -------
-    list[Series]
-        the method returns a list of Series, in order of workout for the timeframe selected
+    List[Series]
+        the method returns a List of Series, in order of workout for the timeframe selected
     """
     with open(json_file_path, 'r') as j:
-        data: dict[str, Any] = loads(j.read())
+        data: Dict[str, Any] = loads(j.read())
     
     return [convert_and_clean_heartrate(workout_data) 
             for workout_data in data['data']['workouts']]
