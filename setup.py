@@ -8,7 +8,7 @@ with open(path.join(path.abspath(path.dirname(__file__)), "README.md")) as f:
 
 setup(
     name='apple_heartrate_pandas',
-    version="0.1.5",
+    version="0.1.6",
     license='MIT',
     url='https://github.com/LeonardoAlchieri/apple-heartrate-pandas',
     author='Leonardo Alchieri',
@@ -17,7 +17,8 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     keywords=['apple', 'health', 'heartrate', 'pandas'],
-    py_modules=['apple_heartrate_pandas'],
+    packages=['apple_heartrate_pandas'],
+    # py_modules=['apple_heartrate_pandas'],
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.7",
