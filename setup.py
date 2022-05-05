@@ -1,6 +1,6 @@
 from setuptools import setup
 # NOTE: necessary to import __version__
-exec(open("apple_heartrate_pandas/_version.py").read())
+# exec(open("apple_heartrate_pandas/_version.py").read())
 
 from os import path
 with open(path.join(path.abspath(path.dirname(__file__)), "README.md")) as f:
@@ -8,7 +8,7 @@ with open(path.join(path.abspath(path.dirname(__file__)), "README.md")) as f:
 
 setup(
     name='apple_heartrate_pandas',
-    version=__version__,
+    version="0.1.5",
     license='MIT',
     url='https://github.com/LeonardoAlchieri/apple-heartrate-pandas',
     author='Leonardo Alchieri',
