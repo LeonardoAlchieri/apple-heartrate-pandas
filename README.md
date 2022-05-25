@@ -1,5 +1,5 @@
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.org/project/YoutubeScraper/)
-[![PyPI version fury.io](https://badge.fury.io/py/ansicolortags.svg)](https://pypi.org/project/apple-heartrate-pandas/)
+[![PyPI version](https://badge.fury.io/py/apple-heartrate-pandas.svg)](https://badge.fury.io/py/apple-heartrate-pandas)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pybadges.svg)](https://pypi.org/project/apple-heartrate-pandas/)
 
 # apple-heartrate-pandas
